@@ -1,0 +1,14 @@
+variables:
+  CLUSTER: managed
+tasks:
+  images:
+    build:
+      services:
+        web:
+          image: quay.io/kevans/nginx-test
+  deployment:
+    deploy:
+      services:
+        web:
+          endpoints:
+            - name: web
