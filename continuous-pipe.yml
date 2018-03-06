@@ -12,3 +12,7 @@ tasks:
         web:
           endpoints:
             - name: web
+          specification:
+            ports:
+              - 80
+              - 443
